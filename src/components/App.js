@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import './App.css';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Naslovna from './components/Naslovna'
-import Kontakt from './components/Kontakt';
-import KartaPica from './components/KartaPica';
+import '../css/App.css';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import Naslovna from './Naslovna'
+import Kontakt from './Kontakt';
+import KartaPica from './KartaPica';
 
 function App() {
 
