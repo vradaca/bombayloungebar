@@ -1,0 +1,45 @@
+/* CarouselPage.css */
+
+.carousel-page {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .carousel-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #f6f6cb;
+  }
+  
+  .carousel {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #333;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: #333;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .carousel-page h1 {
+      font-size: 1.5rem;
+    }
+  
+    .carousel img {
+      border-radius: 5px;
+    }
+  }
+  

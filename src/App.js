@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Naslovna from './components/Naslovna'
+import Kontakt from './components/Kontakt';
+import KartaPica from './components/KartaPica';
 
 function App() {
+
+  const [activePage, setActivePage] = useState('home')
+
+  const handleNav = (page) => {
+    setActivePage(page);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-component">
+      <Navbar onNav = {handleNav} />
+
+      {activePage === 'home' && <Naslovna/>}
+      {activePage === 'menu' && <KartaPica/>}
+      {activePage === 'contact' && <Kontakt/>}
+      
+      
+      <Footer />
     </div>
   );
 }
