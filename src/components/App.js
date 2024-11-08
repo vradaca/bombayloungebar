@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import '../css/App.css';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import Naslovna from './Naslovna'
 import Kontakt from './Kontakt';
 import KartaPica from './KartaPica';
 
@@ -18,8 +17,7 @@ function App() {
     <div className="main-component">
       <Navbar onNav = {handleNav} />
 
-      {activePage === 'home' && <Naslovna/>}
-      {activePage === 'menu' && <KartaPica/>}
+      {activePage === 'home' && <KartaPica/>}
       {activePage === 'contact' && <Kontakt/>}
       
       

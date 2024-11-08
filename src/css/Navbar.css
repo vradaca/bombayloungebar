@@ -53,6 +53,10 @@
     cursor: pointer;
     color: #cb9865;
   }
+
+.menu-toggle:hover{
+  color: #f6f6cb;
+}
   
   @media (max-width: 768px) {
     .menu-toggle {

@@ -14,9 +14,8 @@ function Navbar({onNav}) {
         <img src={logo} alt="Logo"/>
       </div>
       <ul className={`nav-links ${isOpen ? 'show' : ''}`}>
-        <li onClick={() => onNav('home')}>Naslovna</li>
-        <li onClick={() => onNav('menu')}>Karta Pića</li>
-        <li onClick={() => onNav('contact')}>Kontakt</li>
+        <li onClick={() => {onNav('home'); toggleMenu();}}>Karta Pića</li>
+        <li onClick={() => {onNav('contact'); toggleMenu();}}>Kontakt</li>
       </ul>
       <div className="menu-toggle" onClick={toggleMenu}>
         &#9776;
